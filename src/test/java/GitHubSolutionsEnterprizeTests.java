@@ -1,6 +1,5 @@
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selectors;
-import com.codeborne.selenide.conditions.Text;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -25,5 +24,8 @@ public class GitHubSolutionsEnterprizeTests {
         $(Selectors.byTagAndText("button","Solutions")).hover();
         //Solutions -> Enterprize видимый элемент.
         $(Selectors.byTagAndText("a","Enterprise")).shouldBe(visible);
+        //Solutions -> Enterprize.
+        $(Selectors.byTagAndText("a","Enterprise")).click();
+        $("#hero-section-brand-heading").shouldHave(text("The AI-powered"));
     }
 }
