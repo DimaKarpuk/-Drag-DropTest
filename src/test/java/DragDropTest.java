@@ -16,7 +16,7 @@ public class DragDropTest {
 
     }
     @Test
-    void DragAndDrop(){
+    void dragAndDrop(){
         open("drag_and_drop");
         $(".example").should(appear);
 
@@ -26,7 +26,7 @@ public class DragDropTest {
         $("#column-b").shouldHave(text("a"));
     }
     @Test
-    void SecondMethod(){
+    void secondMethod(){
         open("drag_and_drop");
         $(".example").shouldHave(text("Drag and Drop"));
 

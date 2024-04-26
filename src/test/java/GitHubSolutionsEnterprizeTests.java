@@ -13,7 +13,6 @@ public class GitHubSolutionsEnterprizeTests {
     @BeforeAll
     static void BeforeAll(){
         Configuration.browserSize = "1928x1080";  // меняем размер окна браузера
-        Configuration.baseUrl = "https://github.com/";
         //Configuration.holdBrowserOpen = true;
 
     }
